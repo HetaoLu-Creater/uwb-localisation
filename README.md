@@ -1,8 +1,39 @@
-# UWB Localisation
+# UWB Localisation for Tabletop Robots
 
-A Python host implementation for three Ai Thinker BU03 anchors and one BU03 tag. The program reads ranges from A0, estimates a planar position and displays it in a browser. Each live run saves raw measurements and outputs for replay with the same processing method.
+Real time UWB localisation for small spinning robots on a tabletop play field. Three Ai Thinker BU03 anchors and one BU03 tag measure ranges, and a Python host program turns them into a planar position shown live in a browser. Every live run is saved, so the same measurements can be replayed and processed again.
 
-The project includes the final tracking method, its full precision configuration and the experimental recordings used in the UWB report. Numerical scripts check calibration, stationary position error and position display during movement.
+Small robots need reliable positions to move on their own and to interact, for example by chasing or avoiding another robot. Early tests showed that raw ranges at these short distances were biased and sometimes interrupted, so the processing method was developed step by step using recorded data. The repository includes the host software, the final method, the experimental recordings and the evaluation scripts from a university engineering capstone project.
+
+## Main features
+
+- Live localisation in the browser based Localisation Monitor.
+- Processing in five stages, from range filtering and calibration for each anchor to Kalman tracking and display control.
+- Recording and replay using the original measurement times.
+- Stationary and handheld movement recordings from a 0.6 m layout and a 1 m layout.
+- Scripts and tests that reproduce the reported results.
+
+## How it works
+
+```mermaid
+flowchart LR
+    A[Raw ranges from A0] --> B[Range filtering]
+    B --> C[Calibration for each anchor]
+    C --> D[Weighted position solving]
+    D --> E[Kalman tracking]
+    E --> F[Smoothing and display control]
+    F --> G[Displayed position]
+```
+
+[Method details](docs/method.md) explain each stage and its settings.
+
+## Results
+
+| Test | Result |
+| --- | --- |
+| Stationary position error at nine positions in the 1 m layout | RMSE from 1.55 cm to 6.79 cm |
+| Frames with a displayed position during movement | 78.32% |
+
+The movement tests measure display availability and the handling of reception interruptions.
 
 ## Install
 
@@ -18,13 +49,13 @@ On Windows, activate the environment with `.venv\Scripts\activate`.
 
 ## Replay a recording
 
-Replay uses the supplied recordings.
+Replay uses the supplied recordings and needs no hardware.
 
 ```bash
 uwb replay data/one_metre/from_a2_run1
 ```
 
-Open the local address printed by the program. The replay interface uses the same layout as the live Localisation Monitor. It shows positions and anchor ranges. Playback controls change the viewing time and speed. Processing uses the original measurement times.
+Open the local address printed by the program. The replay interface uses the same layout as the live Localisation Monitor and shows positions and anchor ranges. Playback controls change the viewing time and speed, while processing always uses the original measurement times.
 
 | Position | Meaning |
 | --- | --- |
@@ -48,7 +79,7 @@ uwb --config configs/final.json replay data/one_metre/centre_facing_a0
 
 ## Run with hardware
 
-The boards retain manufacturer firmware. See [hardware setup](docs/hardware.md) for board roles and serial connections.
+The boards keep their manufacturer firmware. See [hardware setup](docs/hardware.md) for board roles and serial connections.
 
 ```bash
 uwb ports
@@ -63,7 +94,7 @@ To record for 10 s from the terminal, run
 uwb capture --port /dev/cu.usbmodemXXXX --seconds 10 --output recordings/run02
 ```
 
-## Check the results
+## Reproduce the results
 
 ```bash
 python scripts/evaluate.py
@@ -71,9 +102,7 @@ python scripts/fit_calibration.py
 python -m pytest
 ```
 
-The evaluation reprocesses the 1 m recordings with the final method and the earlier version. Both versions use the same settings apart from the two refinements described in the report. The calibration script refits the per-anchor curves from the supplied stationary data.
-
-The expected final results include stationary position RMSE from 1.55 cm to 6.79 cm. Positions were displayed for 78.32% of movement frames, compared with 74.22% for the earlier version. These results describe the supplied stationary and handheld movement recordings. The movement evaluation measures display availability and interruption handling.
+The evaluation reprocesses the 1 m recordings with the final method and an earlier version. Both versions use the same settings apart from two refinements made late in development. The calibration script refits the curve for each anchor from the supplied stationary data.
 
 ## Project contents
 
@@ -87,7 +116,7 @@ The expected final results include stationary position RMSE from 1.55 cm to 6.79
 | `tests/` | Protocol, algorithm, timing and replay checks. |
 | `docs/` | Hardware setup, method explanation and data descriptions. |
 
-[Method details](docs/method.md) explain the processing stages and configuration. [Data descriptions](docs/data.md) explain the reference positions, fitting split and recorded files.
+[Data descriptions](docs/data.md) explain the reference positions, the split between fitting and checking data, and the recorded files.
 
 ## Licence and references
 
