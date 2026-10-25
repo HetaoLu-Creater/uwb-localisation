@@ -1,0 +1,36 @@
+{
+  "id": "midpoint_a0_a1",
+  "description": "midpoint a0 a1",
+  "layout": "one_metre",
+  "kind": "stationary",
+  "anchors_m": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.866,
+      0.0,
+      0.0
+    ],
+    [
+      0.433,
+      0.7499779996773238,
+      0.0
+    ]
+  ],
+  "reference_xy_m": [
+    0.433,
+    0.0
+  ],
+  "calibration_role": "fit",
+  "tracking_role": "stationary_evaluation",
+  "duration_s": 10.00564058398595,
+  "nominal_packet_interval_s": 0.03,
+  "tag_height_m": 0.0,
+  "raw_file_sha256": {
+    "raw_stream.bin": "4d087f0b9d06873c1b801706fc467b4e8b1edac43b249c37c697906752dccc11",
+    "raw_chunks.csv": "0c29bc07dd5bed8031211fb7ddf5c332352e8bc0831286915c869d54e42d0d1c"
+  }
+}
