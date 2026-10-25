@@ -1,0 +1,36 @@
+{
+  "id": "near_a2",
+  "description": "near a2",
+  "layout": "one_metre",
+  "kind": "stationary",
+  "anchors_m": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.866,
+      0.0,
+      0.0
+    ],
+    [
+      0.433,
+      0.7499779996773238,
+      0.0
+    ]
+  ],
+  "reference_xy_m": [
+    0.433,
+    0.7299779996773238
+  ],
+  "calibration_role": "fit",
+  "tracking_role": "stationary_evaluation",
+  "duration_s": 10.01970025000628,
+  "nominal_packet_interval_s": 0.03,
+  "tag_height_m": 0.0,
+  "raw_file_sha256": {
+    "raw_stream.bin": "815c9d6eb4447fd6c932c2c362b590692d08ba8f8acfd0a629542c319b4870b7",
+    "raw_chunks.csv": "e9400daddf5c69e652d8b897d230b6203c7ccffb23a5cd03c4af6fdbafdef436"
+  }
+}
