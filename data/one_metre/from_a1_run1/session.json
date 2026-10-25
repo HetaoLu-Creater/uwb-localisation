@@ -1,0 +1,35 @@
+{
+  "id": "from_a1_run1",
+  "description": "from a1 run1",
+  "layout": "one_metre",
+  "kind": "movement",
+  "anchors_m": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.866,
+      0.0,
+      0.0
+    ],
+    [
+      0.433,
+      0.7499779996773238,
+      0.0
+    ]
+  ],
+  "reference_xy_m": null,
+  "calibration_role": "not_used",
+  "tracking_role": "setting_selection",
+  "start_anchor": 1,
+  "run": 1,
+  "duration_s": 10.101548874983564,
+  "nominal_packet_interval_s": 0.03,
+  "tag_height_m": 0.0,
+  "raw_file_sha256": {
+    "raw_stream.bin": "cfefb03956b6e9ad6c956e1db44306bb07a80117d0069f5954ce058e8cba65c1",
+    "raw_chunks.csv": "23595206b6ede31a1064fda486c17b0c5831a1d0883a9f00189d21e57f22c395"
+  }
+}
