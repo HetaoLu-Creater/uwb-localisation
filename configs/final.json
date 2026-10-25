@@ -1,0 +1,177 @@
+{
+  "baud_rate": 115200,
+  "radio": {
+    "channel": 1,
+    "rate": 1,
+    "group": null
+  },
+  "input": {
+    "prefer_device_filtered": false
+  },
+  "tag_height_m": 0.0,
+  "anchors": {
+    "0": {
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "calibration_a": 0.7693222297860499,
+      "calibration_b_mm": -167.8121981786385,
+      "calibration_hinge_c": 0.2715383394351564,
+      "calibration_hinge_knot_m": 0.6
+    },
+    "1": {
+      "x": 0.866,
+      "y": 0.0,
+      "z": 0.0,
+      "calibration_a": 0.6842498896297676,
+      "calibration_b_mm": -27.701553918978618,
+      "calibration_hinge_c": -0.12207984338997002,
+      "calibration_hinge_knot_m": 0.6
+    },
+    "2": {
+      "x": 0.433,
+      "y": 0.7499779996773238,
+      "z": 0.0,
+      "calibration_a": 0.6679397467742619,
+      "calibration_b_mm": 5.709774022616826,
+      "calibration_hinge_c": -0.32301825857746624,
+      "calibration_hinge_knot_m": 0.6
+    }
+  },
+  "estimator": "reliable_range_cv",
+  "empirical_filter": {
+    "range_sigma_m": [
+      0.011158322927966426,
+      0.020323998289806838,
+      0.021942084435578123
+    ],
+    "bias_sigma_m": [
+      0.09042154677877326,
+      0.08772545268528972,
+      0.08949829288223242
+    ],
+    "correlation_time_s": 0.06,
+    "process_spectral_density": 0.03,
+    "huber_k": 3.0,
+    "innovation_gate_squared": 100.0,
+    "residual_gate_sigma": 8.0,
+    "maximum_prediction_age_s": 0.3,
+    "reacquire_after_s": 0.24,
+    "reacquire_consistency_m": 0.12,
+    "range_window_s": 0.0,
+    "maximum_range_m": 3.0,
+    "initial_velocity_std_mps": 0.5,
+    "speed_limit_mps": 0.0,
+    "max_iterations": 20
+  },
+  "output_filter": {
+    "mode": "lowpass",
+    "lowpass_tau_s": 0.4,
+    "output_rate_hz": 5.0,
+    "reset_gap_s": 0.15,
+    "maximum_age_s": 0.4
+  },
+  "adaptive_ranges": {
+    "enabled": true,
+    "noise_window_s": 0.9,
+    "evidence_window_s": 0.45,
+    "quiet_duration_s": 0.36,
+    "minimum_motion_rate_mps": 0.06,
+    "minimum_motion_delta_m": 0.04,
+    "evidence_sigma": 4.0,
+    "moving_links": 2,
+    "moving_q_m2_s3": 10.0,
+    "quiet_q_m2_s3": 0.0001,
+    "quiet_velocity_std_mps": 0.015,
+    "noise_floor_m": 0.005,
+    "initial_noise_m": 0.04,
+    "innovation_gate_sigma": 5.0,
+    "reacquire_s": 0.12,
+    "reset_gap_s": 0.15,
+    "maximum_range_m": 5.0
+  },
+  "reliable_output": {
+    "warmup_s": 0.15,
+    "residual_rms_sigma": 4.0,
+    "maximum_source_age_s": 0.4,
+    "require_current_update": true
+  },
+  "conditioned_precision": {
+    "enabled": true,
+    "moving_enabled": true,
+    "full_range_m": 0.05,
+    "fadeout_range_m": 0.1,
+    "minimum_random_sigma_m": 0.005,
+    "contact_bias_floor_m": 0.02
+  },
+  "field_boundary": {
+    "enabled": true,
+    "center": [
+      0.43299999999999994,
+      0.24999266655910798
+    ],
+    "radius_m": 0.5
+  },
+  "quality": {
+    "good_residual_m": 0.04,
+    "degraded_residual_m": 0.1,
+    "maximum_gdop": 5.0,
+    "maximum_position_std_m": 0.25
+  },
+  "range_uncertainty": {
+    "distance_knots_m": [
+      [
+        0.05,
+        0.4664926665591079,
+        0.866
+      ],
+      [
+        0.05,
+        0.49998533311821597,
+        0.7499779996773238
+      ],
+      [
+        0.05,
+        0.4999853331182158,
+        0.7499779996773238
+      ]
+    ],
+    "random_sigma_m": [
+      [
+        0.007380143958342349,
+        0.01710895706821198,
+        0.04562388551523194
+      ],
+      [
+        0.023909289243501247,
+        0.010144688863650943,
+        0.020289377727301886
+      ],
+      [
+        0.02938388677468943,
+        0.01980574937135043,
+        0.01980574937135043
+      ]
+    ],
+    "bias_sigma_m": [
+      [
+        0.02,
+        0.015,
+        0.14931385215359425
+      ],
+      [
+        0.02,
+        0.02477684997861949,
+        0.11994134412529353
+      ],
+      [
+        0.02,
+        0.02082882397995458,
+        0.1223295540010271
+      ]
+    ]
+  },
+  "recording": {
+    "output_dir": "recordings"
+  }
+}
