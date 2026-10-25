@@ -1,0 +1,35 @@
+{
+  "id": "from_a2_run2",
+  "description": "Second movement from A2 towards the centre",
+  "layout": "one_metre",
+  "kind": "movement",
+  "anchors_m": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.866,
+      0.0,
+      0.0
+    ],
+    [
+      0.433,
+      0.7499779996773238,
+      0.0
+    ]
+  ],
+  "reference_xy_m": null,
+  "calibration_role": "not_used",
+  "tracking_role": "comparison",
+  "start_anchor": 2,
+  "run": 2,
+  "duration_s": 10.012978791026399,
+  "nominal_packet_interval_s": 0.03,
+  "tag_height_m": 0.0,
+  "raw_file_sha256": {
+    "raw_stream.bin": "ae524046e8be15cab9bacc1c1265ee1b7c2b7d13f1069549fbc962d40d146184",
+    "raw_chunks.csv": "65066098d2f5ac3899a985f368a3a477020238a315fb70eef057b350c7e25e4d"
+  }
+}
