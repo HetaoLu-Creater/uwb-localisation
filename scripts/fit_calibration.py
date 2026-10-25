@@ -1,7 +1,7 @@
 """Fit the range calibration and repeat the reported range checks.
 
-Fitting retains the original endpoint constraints and slope regularisation.
-Errors are evaluated against the confirmed inward 2 cm reference positions.
+Fitting uses endpoint constraints and slope regularisation.
+The near-anchor reference positions are 2 cm from each anchor towards the centre.
 """
 
 from __future__ import annotations
