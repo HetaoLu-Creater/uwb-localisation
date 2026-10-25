@@ -1,0 +1,36 @@
+{
+  "id": "centre_facing_a1",
+  "description": "centre facing a1",
+  "layout": "early_0p6m",
+  "kind": "stationary",
+  "anchors_m": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.5196152422706631,
+      0.0,
+      0.0
+    ],
+    [
+      0.25980762113533157,
+      0.45,
+      0.0
+    ]
+  ],
+  "reference_xy_m": [
+    0.25980762113533157,
+    0.15
+  ],
+  "calibration_role": "offset_fit_first_5s",
+  "facing_anchor": 1,
+  "duration_s": 10.013293875032105,
+  "nominal_packet_interval_s": 0.03,
+  "tag_height_m": 0.0,
+  "raw_file_sha256": {
+    "raw_stream.bin": "ec3244cc869ef406659e30f6e93e20b643e0bbc30e2b47ecddc54bd236f100fd",
+    "raw_chunks.csv": "41e1254b309ba19ace23383baa646193f9c7a5b2982cdd0a4a2e216c0755a8c9"
+  }
+}
