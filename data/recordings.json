@@ -1,0 +1,737 @@
+[
+  {
+    "path": "data/one_metre/centre_facing_a0",
+    "id": "centre_facing_a0",
+    "description": "centre facing a0",
+    "layout": "one_metre",
+    "kind": "stationary",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.866,
+        0.0,
+        0.0
+      ],
+      [
+        0.433,
+        0.7499779996773238,
+        0.0
+      ]
+    ],
+    "reference_xy_m": [
+      0.43299999999999994,
+      0.24999266655910798
+    ],
+    "calibration_role": "fit",
+    "tracking_role": "stationary_evaluation",
+    "facing_anchor": 0,
+    "duration_s": 10.0238747500116,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "5989d0ac73477bd910b969b4b4620f5f16d02bcee09f40352cbc2e1391ad2760",
+      "raw_chunks.csv": "b6ebf686e91500ef1f4aeff1374b3b93bcce00eb4d4476150cee81666aef2509"
+    }
+  },
+  {
+    "path": "data/one_metre/centre_facing_a2",
+    "id": "centre_facing_a2",
+    "description": "centre facing a2",
+    "layout": "one_metre",
+    "kind": "stationary",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.866,
+        0.0,
+        0.0
+      ],
+      [
+        0.433,
+        0.7499779996773238,
+        0.0
+      ]
+    ],
+    "reference_xy_m": [
+      0.43299999999999994,
+      0.24999266655910798
+    ],
+    "calibration_role": "fit",
+    "tracking_role": "stationary_evaluation",
+    "facing_anchor": 2,
+    "duration_s": 10.006003500020597,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "9bace3e828067a1178d7618c4537b6ad1d25789acde306950cb4ee4a24505409",
+      "raw_chunks.csv": "152fb81f63293c23650a98aa7601317d35a9e8cc869e12a9b3c0cf14dc51a73e"
+    }
+  },
+  {
+    "path": "data/one_metre/centre_facing_a1",
+    "id": "centre_facing_a1",
+    "description": "centre facing a1",
+    "layout": "one_metre",
+    "kind": "stationary",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.866,
+        0.0,
+        0.0
+      ],
+      [
+        0.433,
+        0.7499779996773238,
+        0.0
+      ]
+    ],
+    "reference_xy_m": [
+      0.43299999999999994,
+      0.24999266655910798
+    ],
+    "calibration_role": "check",
+    "tracking_role": "stationary_evaluation",
+    "facing_anchor": 1,
+    "duration_s": 10.012870416976511,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "6aff050cb234eca7958c5f0082df659d1e297281848b1f6b9076ed88389805b0",
+      "raw_chunks.csv": "15cd856ef5b9b9de0150c983d53f9a7067aa1336c24003dc67cf9db6e6dbc1e9"
+    }
+  },
+  {
+    "path": "data/one_metre/near_a0",
+    "id": "near_a0",
+    "description": "near a0",
+    "layout": "one_metre",
+    "kind": "stationary",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.866,
+        0.0,
+        0.0
+      ],
+      [
+        0.433,
+        0.7499779996773238,
+        0.0
+      ]
+    ],
+    "reference_xy_m": [
+      0.017320508075688773,
+      0.010000000000000002
+    ],
+    "calibration_role": "fit",
+    "tracking_role": "stationary_evaluation",
+    "duration_s": 10.008182958001271,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "9d13ca448518646c4f11dcafdeee1765d0f2accd9452e15e664b146ec82d399d",
+      "raw_chunks.csv": "195ffa5e663b180fc8e6625e2b0ae65d996a7958acbebcb8017dcb31ed3e2874"
+    }
+  },
+  {
+    "path": "data/one_metre/near_a2",
+    "id": "near_a2",
+    "description": "near a2",
+    "layout": "one_metre",
+    "kind": "stationary",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.866,
+        0.0,
+        0.0
+      ],
+      [
+        0.433,
+        0.7499779996773238,
+        0.0
+      ]
+    ],
+    "reference_xy_m": [
+      0.433,
+      0.7299779996773238
+    ],
+    "calibration_role": "fit",
+    "tracking_role": "stationary_evaluation",
+    "duration_s": 10.01970025000628,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "815c9d6eb4447fd6c932c2c362b590692d08ba8f8acfd0a629542c319b4870b7",
+      "raw_chunks.csv": "e9400daddf5c69e652d8b897d230b6203c7ccffb23a5cd03c4af6fdbafdef436"
+    }
+  },
+  {
+    "path": "data/one_metre/near_a1",
+    "id": "near_a1",
+    "description": "near a1",
+    "layout": "one_metre",
+    "kind": "stationary",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.866,
+        0.0,
+        0.0
+      ],
+      [
+        0.433,
+        0.7499779996773238,
+        0.0
+      ]
+    ],
+    "reference_xy_m": [
+      0.8486794919243112,
+      0.01
+    ],
+    "calibration_role": "fit",
+    "tracking_role": "stationary_evaluation",
+    "duration_s": 10.024020832963288,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "c9213faa67749393d45afcceebee844083abeabdd2611e52990a390dc698fccc",
+      "raw_chunks.csv": "9af91a623be1238bf147db53e5c9f5795648019078bc9ef12f62806a51882c77"
+    }
+  },
+  {
+    "path": "data/one_metre/from_a0_run1",
+    "id": "from_a0_run1",
+    "description": "from a0 run1",
+    "layout": "one_metre",
+    "kind": "movement",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.866,
+        0.0,
+        0.0
+      ],
+      [
+        0.433,
+        0.7499779996773238,
+        0.0
+      ]
+    ],
+    "reference_xy_m": null,
+    "calibration_role": "not_used",
+    "tracking_role": "setting_selection",
+    "start_anchor": 0,
+    "run": 1,
+    "duration_s": 10.02487237501191,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "d4d58cd4617fa3cc714380bd779ca70f729f5f89340593762b392ec7f79c4754",
+      "raw_chunks.csv": "2ad8be398a0f038600b12599506c8c7a0109c3778c793b53e31dbc23000e0fa8"
+    }
+  },
+  {
+    "path": "data/one_metre/from_a0_run2",
+    "id": "from_a0_run2",
+    "description": "from a0 run2",
+    "layout": "one_metre",
+    "kind": "movement",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.866,
+        0.0,
+        0.0
+      ],
+      [
+        0.433,
+        0.7499779996773238,
+        0.0
+      ]
+    ],
+    "reference_xy_m": null,
+    "calibration_role": "not_used",
+    "tracking_role": "comparison",
+    "start_anchor": 0,
+    "run": 2,
+    "duration_s": 10.024076666973997,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "770068d493d56168f9c7ee640707d57c97060a081f13a571753698d011bf67c6",
+      "raw_chunks.csv": "f3902e8ec449beb80031fe24479931212e36aaaf21d3d28512f47157d2bedd45"
+    }
+  },
+  {
+    "path": "data/one_metre/from_a2_run1",
+    "id": "from_a2_run1",
+    "description": "from a2 run1",
+    "layout": "one_metre",
+    "kind": "movement",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.866,
+        0.0,
+        0.0
+      ],
+      [
+        0.433,
+        0.7499779996773238,
+        0.0
+      ]
+    ],
+    "reference_xy_m": null,
+    "calibration_role": "not_used",
+    "tracking_role": "setting_selection",
+    "start_anchor": 2,
+    "run": 1,
+    "duration_s": 10.01974529097788,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "b87626bd310d4160985b3b29f191b731e8ae96738e350d5a290e28ac82f28540",
+      "raw_chunks.csv": "db19ab461ba0161cfb5577705923602363f6d8ec9a1a91ba85026aa367e4e9e4"
+    }
+  },
+  {
+    "path": "data/one_metre/from_a2_run2",
+    "id": "from_a2_run2",
+    "description": "from a2 run2",
+    "layout": "one_metre",
+    "kind": "movement",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.866,
+        0.0,
+        0.0
+      ],
+      [
+        0.433,
+        0.7499779996773238,
+        0.0
+      ]
+    ],
+    "reference_xy_m": null,
+    "calibration_role": "not_used",
+    "tracking_role": "comparison",
+    "start_anchor": 2,
+    "run": 2,
+    "duration_s": 10.012978791026399,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "ae524046e8be15cab9bacc1c1265ee1b7c2b7d13f1069549fbc962d40d146184",
+      "raw_chunks.csv": "65066098d2f5ac3899a985f368a3a477020238a315fb70eef057b350c7e25e4d"
+    }
+  },
+  {
+    "path": "data/one_metre/from_a1_run1",
+    "id": "from_a1_run1",
+    "description": "from a1 run1",
+    "layout": "one_metre",
+    "kind": "movement",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.866,
+        0.0,
+        0.0
+      ],
+      [
+        0.433,
+        0.7499779996773238,
+        0.0
+      ]
+    ],
+    "reference_xy_m": null,
+    "calibration_role": "not_used",
+    "tracking_role": "setting_selection",
+    "start_anchor": 1,
+    "run": 1,
+    "duration_s": 10.101548874983564,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "cfefb03956b6e9ad6c956e1db44306bb07a80117d0069f5954ce058e8cba65c1",
+      "raw_chunks.csv": "23595206b6ede31a1064fda486c17b0c5831a1d0883a9f00189d21e57f22c395"
+    }
+  },
+  {
+    "path": "data/one_metre/from_a1_run2",
+    "id": "from_a1_run2",
+    "description": "from a1 run2",
+    "layout": "one_metre",
+    "kind": "movement",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.866,
+        0.0,
+        0.0
+      ],
+      [
+        0.433,
+        0.7499779996773238,
+        0.0
+      ]
+    ],
+    "reference_xy_m": null,
+    "calibration_role": "not_used",
+    "tracking_role": "comparison",
+    "start_anchor": 1,
+    "run": 2,
+    "duration_s": 10.013514957972802,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "dfd6a25a76419bfc3520a51ceeb0688ecd78a4f189db4cbe49da1f057de6188b",
+      "raw_chunks.csv": "29134497ef86fc995d259100e1ca90288df3d670af01878580f1e788aeb42622"
+    }
+  },
+  {
+    "path": "data/one_metre/midpoint_a0_a1",
+    "id": "midpoint_a0_a1",
+    "description": "midpoint a0 a1",
+    "layout": "one_metre",
+    "kind": "stationary",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.866,
+        0.0,
+        0.0
+      ],
+      [
+        0.433,
+        0.7499779996773238,
+        0.0
+      ]
+    ],
+    "reference_xy_m": [
+      0.433,
+      0.0
+    ],
+    "calibration_role": "fit",
+    "tracking_role": "stationary_evaluation",
+    "duration_s": 10.00564058398595,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "4d087f0b9d06873c1b801706fc467b4e8b1edac43b249c37c697906752dccc11",
+      "raw_chunks.csv": "0c29bc07dd5bed8031211fb7ddf5c332352e8bc0831286915c869d54e42d0d1c"
+    }
+  },
+  {
+    "path": "data/one_metre/midpoint_a0_a2",
+    "id": "midpoint_a0_a2",
+    "description": "midpoint a0 a2",
+    "layout": "one_metre",
+    "kind": "stationary",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.866,
+        0.0,
+        0.0
+      ],
+      [
+        0.433,
+        0.7499779996773238,
+        0.0
+      ]
+    ],
+    "reference_xy_m": [
+      0.2165,
+      0.3749889998386619
+    ],
+    "calibration_role": "fit",
+    "tracking_role": "stationary_evaluation",
+    "duration_s": 10.001700250024442,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "01b3994b9b3c68f3b51b932055673223b57513ca20e634f5c69b7aa10eec07a1",
+      "raw_chunks.csv": "45806fe3a5a5a0b198a0c36f0a4ac5c5e757f8d54dfbeaff177bc2396388fbfa"
+    }
+  },
+  {
+    "path": "data/one_metre/midpoint_a1_a2",
+    "id": "midpoint_a1_a2",
+    "description": "midpoint a1 a2",
+    "layout": "one_metre",
+    "kind": "stationary",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.866,
+        0.0,
+        0.0
+      ],
+      [
+        0.433,
+        0.7499779996773238,
+        0.0
+      ]
+    ],
+    "reference_xy_m": [
+      0.6495,
+      0.3749889998386619
+    ],
+    "calibration_role": "check",
+    "tracking_role": "stationary_evaluation",
+    "duration_s": 10.02469808299793,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "0fcce6d55488d263811e79f6fc58ffb0f776d5be960419ce122a5982f4f9854c",
+      "raw_chunks.csv": "d3f8a4e27878cf3cb12808b8ad51473e42a46fee480763c6f0c804e0b9bafc83"
+    }
+  },
+  {
+    "path": "data/early_0p6m/centre_repeat1",
+    "id": "centre_repeat1",
+    "description": "centre repeat1",
+    "layout": "early_0p6m",
+    "kind": "stationary",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.5196152422706631,
+        0.0,
+        0.0
+      ],
+      [
+        0.25980762113533157,
+        0.45,
+        0.0
+      ]
+    ],
+    "reference_xy_m": [
+      0.25980762113533157,
+      0.15
+    ],
+    "calibration_role": "range_diagnosis",
+    "duration_s": 10.003343500080518,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "cf6f6cf7ac22832c1f725258c3e5a042c522f8cf62166bbcf45327ec7f493d74",
+      "raw_chunks.csv": "4fc06d5d222c8e4366b08f5d129284a8899d743fb1ad7ff614552751500c68aa"
+    }
+  },
+  {
+    "path": "data/early_0p6m/centre_repeat2",
+    "id": "centre_repeat2",
+    "description": "centre repeat2",
+    "layout": "early_0p6m",
+    "kind": "stationary",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.5196152422706631,
+        0.0,
+        0.0
+      ],
+      [
+        0.25980762113533157,
+        0.45,
+        0.0
+      ]
+    ],
+    "reference_xy_m": [
+      0.25980762113533157,
+      0.15
+    ],
+    "calibration_role": "range_diagnosis",
+    "duration_s": 10.021558791049756,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "7197d93d12d39c3f9531e70426138dc8053a77dfbafeb0e722867274d7892ca4",
+      "raw_chunks.csv": "b4127b70313a53f92e2bc66b9eb458b67bb0a2c56606705b8cf0589cfa5ffcbf"
+    }
+  },
+  {
+    "path": "data/early_0p6m/centre_facing_a0",
+    "id": "centre_facing_a0",
+    "description": "centre facing a0",
+    "layout": "early_0p6m",
+    "kind": "stationary",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.5196152422706631,
+        0.0,
+        0.0
+      ],
+      [
+        0.25980762113533157,
+        0.45,
+        0.0
+      ]
+    ],
+    "reference_xy_m": [
+      0.25980762113533157,
+      0.15
+    ],
+    "calibration_role": "offset_fit_first_5s",
+    "facing_anchor": 0,
+    "duration_s": 10.025027540978044,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "0fd7ffda5d33ddde31cd914d6d8f563317a6fc51091c60c13aa259d2702fc1e4",
+      "raw_chunks.csv": "fb112f834eae7c98bcedbb2fa639028b358ce72686099f84f0cd4ee78ef3c8a6"
+    }
+  },
+  {
+    "path": "data/early_0p6m/centre_facing_a1",
+    "id": "centre_facing_a1",
+    "description": "centre facing a1",
+    "layout": "early_0p6m",
+    "kind": "stationary",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.5196152422706631,
+        0.0,
+        0.0
+      ],
+      [
+        0.25980762113533157,
+        0.45,
+        0.0
+      ]
+    ],
+    "reference_xy_m": [
+      0.25980762113533157,
+      0.15
+    ],
+    "calibration_role": "offset_fit_first_5s",
+    "facing_anchor": 1,
+    "duration_s": 10.013293875032105,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "ec3244cc869ef406659e30f6e93e20b643e0bbc30e2b47ecddc54bd236f100fd",
+      "raw_chunks.csv": "41e1254b309ba19ace23383baa646193f9c7a5b2982cdd0a4a2e216c0755a8c9"
+    }
+  },
+  {
+    "path": "data/early_0p6m/centre_facing_a2",
+    "id": "centre_facing_a2",
+    "description": "centre facing a2",
+    "layout": "early_0p6m",
+    "kind": "stationary",
+    "anchors_m": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.5196152422706631,
+        0.0,
+        0.0
+      ],
+      [
+        0.25980762113533157,
+        0.45,
+        0.0
+      ]
+    ],
+    "reference_xy_m": [
+      0.25980762113533157,
+      0.15
+    ],
+    "calibration_role": "offset_fit_first_5s",
+    "facing_anchor": 2,
+    "duration_s": 10.019869000068866,
+    "nominal_packet_interval_s": 0.03,
+    "tag_height_m": 0.0,
+    "raw_file_sha256": {
+      "raw_stream.bin": "ad1d47d52a349bed1e4270385da0b91b9b82a616d75ca71955bb810e055d31d5",
+      "raw_chunks.csv": "f1327b72a7f8aa039d9e2728854e96ddca1ab48a5a4ceb52a3c37c9fdd2b04ff"
+    }
+  }
+]
