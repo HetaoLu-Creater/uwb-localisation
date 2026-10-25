@@ -1,0 +1,37 @@
+{
+  "id": "centre_facing_a2",
+  "description": "centre facing a2",
+  "layout": "one_metre",
+  "kind": "stationary",
+  "anchors_m": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.866,
+      0.0,
+      0.0
+    ],
+    [
+      0.433,
+      0.7499779996773238,
+      0.0
+    ]
+  ],
+  "reference_xy_m": [
+    0.43299999999999994,
+    0.24999266655910798
+  ],
+  "calibration_role": "fit",
+  "tracking_role": "stationary_evaluation",
+  "facing_anchor": 2,
+  "duration_s": 10.006003500020597,
+  "nominal_packet_interval_s": 0.03,
+  "tag_height_m": 0.0,
+  "raw_file_sha256": {
+    "raw_stream.bin": "9bace3e828067a1178d7618c4537b6ad1d25789acde306950cb4ee4a24505409",
+    "raw_chunks.csv": "152fb81f63293c23650a98aa7601317d35a9e8cc869e12a9b3c0cf14dc51a73e"
+  }
+}
