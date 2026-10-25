@@ -71,7 +71,7 @@ python scripts/fit_calibration.py
 python -m pytest
 ```
 
-The evaluation reprocesses the 1 m recordings with the final method and the earlier version. The earlier version changes the two refinements described in the report while keeping the other settings unchanged. The calibration script refits the per-anchor curves from the supplied stationary data.
+The evaluation reprocesses the 1 m recordings with the final method and the earlier version. Both versions use the same settings apart from the two refinements described in the report. The calibration script refits the per-anchor curves from the supplied stationary data.
 
 The expected final results include stationary position RMSE from 1.55 cm to 6.79 cm. Positions were displayed for 78.32% of movement frames, compared with 74.22% for the earlier version. These results describe the supplied stationary and handheld movement recordings. The movement evaluation measures display availability and interruption handling.
 
