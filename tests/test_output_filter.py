@@ -113,7 +113,7 @@ def test_no_new_frames_expire_and_inspection_does_not_mutate_filter():
 def test_low_publication_rate_cannot_expire_fullrate_filter_diagnostics():
     stage = CausalOutputFilter(OutputParameters(output_rate_hz=1.0))
     out = [stage.step(float(t), [float(t), 0.0]) for t in np.arange(0.0, 0.61, 0.03)]
-    assert out[-1]["xy"] is None  # the published point is stale
+    assert out[-1]["xy"] is None  # The displayed position has expired.
     assert out[-1]["filtered_xy"] == pytest.approx([0.6, 0.0])
     assert out[-1]["filtered_time_s"] == pytest.approx(0.6)
 
