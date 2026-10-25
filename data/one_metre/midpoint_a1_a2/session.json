@@ -1,6 +1,6 @@
 {
   "id": "midpoint_a1_a2",
-  "description": "midpoint a1 a2",
+  "description": "Midpoint between A1 and A2",
   "layout": "one_metre",
   "kind": "stationary",
   "anchors_m": [
