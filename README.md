@@ -22,6 +22,8 @@ flowchart LR
     D --> E[Kalman tracking]
     E --> F[Smoothing and display control]
     F --> G[Displayed position]
+    classDef default fill:#f6f8fa,stroke:#d1d9e0,color:#1f2328
+    linkStyle default stroke:#59636e
 ```
 
 [Method details](docs/method.md) explain each stage and its settings.
