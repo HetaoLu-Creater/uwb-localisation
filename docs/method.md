@@ -4,11 +4,11 @@ The final method estimates a planar tag position from three ranges and a fixed t
 
 ## Processing stages
 
-1. **Range filtering.** Each link has a filter for range and its rate of change. Stable readings from at least two links support the stationary model. Joint changes support the moving model. Isolated jumps are withheld until the changes persist.
+1. **Range filtering.** Each link has a filter for range and its rate of change. The filter uses a stationary model when at least two ranges are stable. It uses a moving model when the ranges change together. Isolated jumps are withheld until the changes persist.
 2. **Range calibration.** Each anchor has a continuous calibration function with two linear segments. The coefficients convert filtered ranges into calibrated ranges. Negative calibrated values remain visible to the residual checks.
 3. **Position estimation.** A weighted nonlinear least squares solver finds a planar position consistent with the three calibrated ranges. Weights account for random uncertainty, persistent bias and correlation between nearby measurements. A Huber loss reduces the influence of large residuals.
 4. **Motion tracking.** A Kalman filter tracks position and velocity using the interval between device timestamps. It rejects inconsistent updates and positions outside the circular field. Predictions expire after 0.3 s.
-5. **Smoothing and display.** An exponential filter smooths the tracked position with a time constant of 0.4 s. Display updates run at a nominal 5 Hz. A new displayed position requires an accepted measurement, acceptable residuals and completion of the initial settling period. A held position is cleared when its source measurement is older than 0.4 s. A tracker reset can clear it earlier.
+5. **Smoothing and display.** An exponential filter smooths the tracked position with a time constant of 0.4 s. Display updates run at a nominal 5 Hz. A new displayed position requires an accepted measurement, acceptable residuals and a short settling time after tracking starts. A held position is cleared when its source measurement is older than 0.4 s. A tracker reset can clear it earlier.
 
 The tracked position is the position before display smoothing. The displayed position is the position visible after smoothing and display checks. A visible held position counts towards the displayed frame percentage. The percentage uses received frames as its denominator.
 
@@ -24,7 +24,7 @@ The uncertainty tables contain separate random and bias terms for each anchor. T
 
 ## Comparison with the earlier version
 
-The earlier version uses the same calibration, range filtering, tracking and display settings. It differs in two places. The earlier version applies near-anchor uncertainty adjustment during stationary periods and checks the circular boundary at display. The evaluation script makes these two changes in the same implementation.
+The earlier version uses the same calibration, range filtering, tracking and display settings. It differs in two places. The earlier version applies near-anchor uncertainty adjustment during stationary periods and checks the circular boundary before display. The evaluation script makes these two changes in the same implementation.
 
 ## Code map
 
