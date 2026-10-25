@@ -53,12 +53,11 @@ def _integer_setting(value: object, name: str) -> int:
 def normalize_twr_device_profile(
     profile: Mapping[str, object],
 ) -> dict[str, int | float]:
-    """Validate and type-normalise the indivisible BU03 SETDEV payload.
+    """Check the BU03 SETDEV fields and convert them to the required numeric types.
 
-    The stock firmware exposes the ranging superframe length and all device
-    filter/calibration fields through one command.  Returning canonical types
-    lets setup use exactly the same values for the write and its readback
-    comparison; malformed fractional integer fields are rejected pre-write.
+    One command sets the ranging superframe length, device filters and calibration.
+    The same converted values are used to configure the board and check its response.
+    Fields that require integers are checked before the command is sent.
     """
 
     required = (

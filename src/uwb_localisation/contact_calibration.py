@@ -36,7 +36,7 @@ def derivative(raw, calibration):
 
 
 def range_uncertainty_components(calibrated_ranges, uncertainty):
-    """Return (random_sigma, systematic_sigma) from frozen distance tables."""
+    """Return random and systematic range uncertainty from the configured tables."""
     r = np.asarray(calibrated_ranges, float)
     shape = r.shape
     flat = r.reshape(-1, 3)

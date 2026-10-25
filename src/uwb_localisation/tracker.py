@@ -70,8 +70,7 @@ class TrackingResult:
         (math.nan, math.nan),
     )
     diagnostic_source: str = "current_ranges"
-    # Optional presentation stage. x/y, velocity and covariance above remain
-    # the tracked position; held and smoothed displayed positions are separate.
+    # Store held and smoothed display positions separately from the tracking state.
     output_stage: dict | None = None
 
 

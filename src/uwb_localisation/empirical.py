@@ -207,8 +207,8 @@ class EmpiricalTracker:
                 pp = f @ self.cov @ f.T + q
                 self.x = xp
                 self.cov = pp
-        # Conservative temporal uncertainty: inflation for correlated samples
-        # and between-pose bias. Bias is separately retained in exported budgets.
+        # Increase uncertainty for correlated samples and persistent range bias.
+        # The exported uncertainty values keep bias separate.
         factor = max(1.0, self.p.correlation_time_s / max(dt, 0.001)) if dt else 1.0
         sigma = np.sqrt(
             np.asarray(self.p.range_sigma_m) ** 2 * factor

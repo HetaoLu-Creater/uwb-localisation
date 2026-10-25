@@ -160,7 +160,7 @@ class CausalOutputFilter:
 
 
 def filter_trace(time_s, xy, parameters=None, states=None, resets=None):
-    """Deterministic convenience wrapper; returns one diagnostic row per input."""
+    """Apply the display filter and return one diagnostic row for each input."""
     if len(time_s) != len(xy):
         raise ValueError("timestamps and coordinates must have matching length")
     states = ["updated"] * len(time_s) if states is None else states

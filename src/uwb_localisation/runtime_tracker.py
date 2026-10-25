@@ -18,9 +18,10 @@ def make_tracker(config):
 class ReliableUWBTracker:
     """Live and replay adapter for range filtering and display control.
 
-    Raw words are calibrated exactly once inside ReliableRangeTracker. Per-link
-    acceptance reports the range conditioner, while used_for_position and the
-    position-level acceptance flag report an actual current XY update.
+    ReliableRangeTracker calibrates each raw range once. Per-link acceptance
+    identifies readings accepted by the range filter. The position acceptance
+    flag identifies a new accepted position update. ``used_for_position`` marks
+    the ranges used in that update.
     """
 
     def __init__(self, config):
@@ -137,8 +138,8 @@ class ReliableUWBTracker:
         total = temporal + bias
         current_ids = ids if accepted else []
         h, j = slant_range_model(xy, self.xyz[current_ids], self.height)
-        # Diagnostics must use the same causal range observation as NLS. With
-        # an optional median window this differs from the calibrated raw word.
+        # Calculate diagnostics from the same filtered ranges used by NLS.
+        # Median filtering can make these differ from the calibrated raw ranges.
         residual = h - np.asarray(row["filtered_m"])[current_ids]
         standard = residual / np.sqrt(row["effective_range_variance_m2"][current_ids])
         info = j.T @ j
