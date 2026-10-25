@@ -1,0 +1,35 @@
+{
+  "id": "centre_repeat2",
+  "description": "centre repeat2",
+  "layout": "early_0p6m",
+  "kind": "stationary",
+  "anchors_m": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.5196152422706631,
+      0.0,
+      0.0
+    ],
+    [
+      0.25980762113533157,
+      0.45,
+      0.0
+    ]
+  ],
+  "reference_xy_m": [
+    0.25980762113533157,
+    0.15
+  ],
+  "calibration_role": "range_diagnosis",
+  "duration_s": 10.021558791049756,
+  "nominal_packet_interval_s": 0.03,
+  "tag_height_m": 0.0,
+  "raw_file_sha256": {
+    "raw_stream.bin": "7197d93d12d39c3f9531e70426138dc8053a77dfbafeb0e722867274d7892ca4",
+    "raw_chunks.csv": "b4127b70313a53f92e2bc66b9eb458b67bb0a2c56606705b8cf0589cfa5ffcbf"
+  }
+}
