@@ -1,6 +1,6 @@
 {
   "id": "from_a1_run1",
-  "description": "from a1 run1",
+  "description": "First movement from A1 towards the centre",
   "layout": "one_metre",
   "kind": "movement",
   "anchors_m": [
