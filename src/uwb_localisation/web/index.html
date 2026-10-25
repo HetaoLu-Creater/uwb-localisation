@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UWB Localisation Monitor</title>
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <h1>UWB Localisation Monitor</h1>
+      <span id="mode">Connecting</span>
+    </header>
+
+    <div id="playback" class="playback" hidden>
+      <button id="play">Play</button>
+      <button id="restart">Restart</button>
+      <label>Speed
+        <select id="speed">
+          <option value="0.5">0.5×</option>
+          <option value="1" selected>1×</option>
+          <option value="2">2×</option>
+          <option value="4">4×</option>
+        </select>
+      </label>
+      <input id="seek" type="range" min="0" value="0" step="0.01" aria-label="Replay time">
+      <span id="time">0.00 s</span>
+    </div>
+
+    <main class="workspace">
+      <section class="plot-panel">
+        <div class="panel-heading">
+          <h2>Position</h2>
+          <div class="plot-controls">
+            <label><input type="checkbox" id="grid"> Show grid</label>
+            <label><input type="checkbox" id="trail"> Show trajectory</label>
+            <label id="originalControl" hidden>
+              <input type="checkbox" id="originalToggle"> Original recording
+            </label>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <canvas id="field" width="700" height="700" aria-label="Planar positions in the field"></canvas>
+          <div class="legend">
+            <span class="tracked">●</span> Tracked position
+            <span class="displayed">●</span> Displayed position
+            <span id="originalLegend" hidden>
+              <span class="original">●</span> Original recorded position
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <aside>
+        <section>
+          <h2 class="panel-heading">Tag Position</h2>
+          <div class="section-body">
+            <table>
+              <thead><tr><th>Position</th><th>X (cm)</th><th>Y (cm)</th></tr></thead>
+              <tbody id="positions"></tbody>
+            </table>
+            <p id="status">Waiting for frames</p>
+            <p id="error"></p>
+          </div>
+        </section>
+        <section>
+          <h2 class="panel-heading">Anchor Ranges</h2>
+          <div class="section-body">
+            <table>
+              <thead><tr><th>Anchor</th><th>Raw (cm)</th><th>Calibrated (cm)</th></tr></thead>
+              <tbody id="ranges"></tbody>
+            </table>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <footer class="position-guide" aria-labelledby="positionGuideTitle">
+      <h2 id="positionGuideTitle">Position guide</h2>
+      <dl>
+        <dt>Tracked position</dt>
+        <dd>Position calculated from the range readings before the extra smoothing used for display.</dd>
+        <dt>Displayed position</dt>
+        <dd>Position shown after smoothing and display checks. It can stay visible briefly between updates.</dd>
+        <dt>Original recorded position</dt>
+        <dd>Tracked position saved during the original run. Replay shows it alongside the newly processed positions for comparison.</dd>
+      </dl>
+    </footer>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
