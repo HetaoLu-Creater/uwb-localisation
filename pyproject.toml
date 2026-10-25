@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uwb-localisation"
+version = "1.0.0"
+description = "BU03 range processing, planar tracking and recording replay"
+readme = "README.md"
+authors = [{name = "Hetao Lu"}]
+license = {file = "LICENSE"}
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0", "scipy>=1.10", "pyserial>=3.5"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+uwb = "uwb_localisation.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+uwb_localisation = ["web/*.html", "web/*.css", "web/*.js"]
